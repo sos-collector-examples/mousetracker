@@ -1,0 +1,50 @@
+item,phasetype,max_time,text,shuffle_1,
+0,text,user,"<style>
+#movie_area{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 600;
+  height: 500;
+}
+#proceed_btn{
+  position: absolute;
+  top: 750;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 600;
+  height: 50;
+}
+</style>
+<video 
+  id=""movie_area""
+  class=""movie_area"" 
+  controls
+>
+  <source 
+    src=""../User/Stimuli/mt_exemplar/Collector_voiceover.mp4"" 
+    type=""video/mp4""
+  >
+    Your browser does not support the video tag.
+</video><br>
+<button 
+  class=""btn btn-primary""
+  onclick=""Phase.submit()""
+  id=""proceed_btn""
+  style=""display:none""
+>
+  Proceed
+</button>
+<script>
+Phase.set_timer(function(){
+  $(""#proceed_btn"").show();
+},10000);
+</script>
+",off,
+2 to 5,mousetracker,user,,practice,
+0,instruct,user,You've completed the practice trials. You are about to begin the main trials,off,
+6 to 37,mousetracker,user,,trials,
